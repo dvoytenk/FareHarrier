@@ -1,1 +1,1 @@
-Files to run my Insight Data Science project. The random forest model output file (rf23.pkl) was over 100 megabytes, so it was compressed (you can extract it via tar -zvxf rf23.pkl.tar.gz). 
+Files to run my Insight Data Science project. The random forest model output file (rf23.pkl) was over 100 megabytes, so it was compressed (you can extract it via tar -zvxf rf23.pkl.tar.gz). You will also need to insert your personal Dark Sky API token into the darsky.py file and your personal Mapbox token into the app.py file.
