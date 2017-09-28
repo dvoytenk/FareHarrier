@@ -169,7 +169,7 @@ def update_graph(slider_value,dropdown_value):
         }],
         'layout': {
             'mapbox': {
-                'accesstoken': 'pk.eyJ1IjoiZHZveXRlbmsiLCJhIjoiY2o3YmF6MHNzMHE4azJwbWp0djFzN3F5biJ9.Zqh1ahbuCrBwp2thJk1gjg',
+                'accesstoken': 'YOURMAPBOXTOKENGOESHERE',
                 
                 'center':dict(lat=40.754,lon=-73.977),
                 'zoom':10,
@@ -189,7 +189,6 @@ def update_graph(slider_value,dropdown_value):
 app.css.append_css({
     #'external_url': 'https://rawgit.com/dvoytenk/skipthetrain/master/bWLwgP.css'
      'external_url':'https://cdn.rawgit.com/dvoytenk/FareHarrier/f655b9e9/bWLwgP.css',
-#'external_url': 'http://128.122.53.111:5555/mwrfiles/skipthetrain.css'
 })
 
 if __name__ == '__main__':
