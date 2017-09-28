@@ -19,14 +19,14 @@ def get_forecast():
     #unix_tstamp=calendar.timegm(pendulum.now().utctimetuple())
 
     #adding this is a time machine request avoid for realtime forecasts, no need for unix timestmap
-    #url='https://api.darksky.net/forecast/32cd2be3e8e674975b2e987ab7ee16b6/40.7829,-73.9654,'+str(unix_tstamp)
-    url='https://api.darksky.net/forecast/32cd2be3e8e674975b2e987ab7ee16b6/40.7829,-73.9654'
+    #url='https://api.darksky.net/forecast//40.7829,-73.9654,'+str(unix_tstamp)
+    url='https://api.darksky.net/forecast/YOURDARKSKYAPIGOESHERE/40.7829,-73.9654'
 
 
 
     response = urllib.urlopen(url)
     d = json.loads(response.read())
-    #with open('https://api.darksky.net/forecast/32cd2be3e8e674975b2e987ab7ee16b6/40.7829,-73.9654,141105960') as json_data:
+    #with open('https://api.darksky.net/forecast//40.7829,-73.9654,141105960') as json_data:
     #with open('40.7829,-73.9654,1489503600') as json_data:
         #d = json.load(json_data)
         #print(d)
@@ -57,6 +57,3 @@ def get_forecast():
         #this has been customized for h
 
     return np.array(values)
-
-#df=pd.read_json('https://api.darksky.net/forecast/32cd2be3e8e674975b2e987ab7ee16b6/40.7829,-73.9654,1411059600')
-#https://api.darksky.net/forecast/32cd2be3e8e674975b2e987ab7ee16b6
